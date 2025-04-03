@@ -4,11 +4,11 @@ body {
 }
 
 header {
-    justify-content: space-between;
-    padding:15px ;
-    margin-bottom: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .button {
@@ -18,14 +18,15 @@ header {
     padding: 15px;
     font-size: 24px;
     border-radius: 10px;
+    display: block;
 }
 
 nav {
     border-top: 5px solid white;
     border-bottom: 5px solid white;
     padding: 25px 100px 25px 95px;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-link {
@@ -39,79 +40,110 @@ h1 {
     text-align: center;
     color: white;
     font-size: 36px;
-    margin-top: 10px;
-    margin-bottom:75px ;
+    margin-top: 45px;
+    margin-bottom: 40px;
 }
 
-p {
+.post-text {
     font-size: 24px;
 }
 
 .info {
-    flex-wrap: wrap;
-    width: 1100px;
     display: flex;
-    margin: 0px auto 0px auto;
+    flex-wrap: wrap;
     max-width: 1100px;
+    margin: 0 auto;
+    
 }
 
-article {
+.post {
     background-color: white;
-    padding:5px ;
+    padding: 15px 45px 30px 45px;
     width: 400px;
-    margin:15px ;
+    margin: 20px;
+    position: relative;
+    border-radius: 15px;
 }
 
 .article-but {
     text-decoration: none;
-    background-color: #0969A2;
+    background-color: #133aac;
     color: white;
     font-size: 24px;
     text-align: center;
     padding: 10px 75px 10px 75px;
+    display: block;
+    border-radius: 15px;
 }
 
-.article-but2 {
-    text-decoration: none;
-    background-color: #FFBB00;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    padding: 10px 75px 10px 75px;
+.full-image {
+    margin: 100px 0px 100px 0px;
 }
 
-.article-but3 {
-    text-decoration: none;
-    background-color: #FF3D00;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    padding: 10px 75px 10px 75px;
-}
-
-.article-but4 {
-    text-decoration: none;
-    background-color: #AC13A6;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    padding: 10px 75px 10px 75px;
+.social {
+    display: block;
+    width: 30px;
 }
 
 footer {
-    background-color: #0969A2;
-    padding:50px ;
-    display: flex
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 45px;
 }
 
-footer a {
-    margin-right: ;
-    display: block;
-}
-
-footer p {
+.footer-text {
     font-size: 24px;
+    margin-right: 30px;
 }
-a{
-    display: block;
+
+.footer-text span {
+    color: #850AE5;
+    font-weight: bolder;
 }
+
+aside{
+    background-color:#36bbce;
+    position: fixed;
+    right: 0px;
+    top:250px;
+    width: 120px;
+    height:200px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.post-img{
+    border-radius: 15px;
+}
+
+.hho{
+    width: 100px;
+    position: absolute;
+    top:-10px;
+    left: -60px;
+
+}
+
+h1::before{
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    content:url(111);
+    margin-right: 10px;
+}
+
+h1::after{
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    content:url(111);
+    margin-left: 10px;
+}
+
+
